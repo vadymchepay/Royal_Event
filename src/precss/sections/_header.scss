@@ -1,0 +1,77 @@
+.header {
+    max-width: 100%;
+    .top_header {
+        max-width: 1818px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-color: #f3f1ec;
+        .main_nav {
+            @include wrapper();
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 23px 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    &::after {
+                        content: '';
+                        display: block;
+                        background-color: #d0ceca;
+                        width: 1px;
+                        height: 16px;
+                        transform: translateX(25px);
+                    }
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    a {
+                        color: #808369;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        letter-spacing: 1.4px;
+
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .header_contacts {
+        @include wrapper();
+        padding-top: 59px;
+        .header_contacts_items {
+            @include row-flex();
+            .header-contacts-items__item {
+                @include col();
+                @include size(4);
+                @include size-lg(4);
+                @include size-md(4);
+                @include size-sm(12);
+                display: flex;
+                justify-content: center;
+                color: #808369;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+                .contacts {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+                .cart {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+
+            }
+        }
+    }
+}
