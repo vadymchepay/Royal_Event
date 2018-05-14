@@ -4,11 +4,26 @@ body {
     font-family: 'PT_Serif';
 }
 
-a{
+a {
     display: block;
-   text-decoration: none;
+    text-decoration: none;
     text-align: center;
     &:hover {
         text-decoration: none;
     }
+}
+
+button {
+    width: 273px;
+    height: 72px;
+    background-color: #ffb18b;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PT_Serif';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+
 }

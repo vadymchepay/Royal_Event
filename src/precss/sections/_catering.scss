@@ -1,0 +1,87 @@
+.catering {
+    width: 100%;
+    .container {
+        @include wrapper();
+        .catering_items {
+            @include row-flex();
+            .catering_items-item {
+                @include col();
+                @include size(4);
+                @include size-lg(4);
+                @include size-md(4);
+                @include size-sm(12);
+                position: relative;
+                margin-bottom: 66px;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                .catering-name {
+                    color: #ffffff;
+                    font-family: 'Yellowtail';
+                    font-size: 45px;
+                    font-weight: 700;
+                    line-height: 35px;
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    text-align: center;
+                    line-height: 473px;
+
+                }
+
+
+
+            }
+        }
+
+    }
+}
+
+
+.section_title {
+    width: 33.33%;
+    margin: 110px auto 106px;
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    .section_title-name {
+        color: #808369;
+        font-family: "PT Serif";
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        margin-bottom: 25px;
+    }
+    .section-title_heading {
+        color: #434343;
+        font-family: "PT Serif";
+        font-size: 35px;
+        font-weight: 700;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            width: 111px;
+            height: 2px;
+            background-color: #a7a99a;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 115px;
+        }
+    }
+
+}
+
+.catering_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 103px;
+}

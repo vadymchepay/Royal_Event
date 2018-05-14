@@ -92,36 +92,4 @@ $carousel-item-width: $carousel-item-height !default;
     }
 }
 
-.carousel-item-descr {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        max-width: 770px;
-        color: #ffffff;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 60px;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-    }
-    button {
-        width: 273px;
-        height: 72px;
-        background-color: #ffb18b;
-        box-sizing: border-box;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.6px;
 
-    }
-}
