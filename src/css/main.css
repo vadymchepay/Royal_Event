@@ -629,3 +629,147 @@ button {
           color: #ffffff;
           font-size: 50px;
           font-weight: 700; }
+
+.testimonals {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box; }
+  .testimonals .section_holder {
+    width: 100%;
+    background-color: #f3f1ec;
+    padding-top: 110px;
+    padding-bottom: 110px; }
+    .testimonals .section_holder .container {
+      padding-bottom: 10px; }
+
+.testimonals_carousel .testimonals_carousel_container {
+  width: 1169px;
+  margin: 0 auto;
+  position: relative; }
+  .testimonals_carousel .testimonals_carousel_container .carousel {
+    height: 330px !important; }
+
+.testimonal_item {
+  position: relative; }
+  .testimonal_item .testimonal_foto {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #f3f1ec;
+    margin: 0 auto;
+    background-image: url(../img/testimonals.jpg);
+    background-repeat: no-repeat;
+    background-size: 95px 95px;
+    background-position: center center; }
+  .testimonal_item .testimonal_text {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 88px 148px 28px;
+    position: relative;
+    z-index: 2;
+    top: -55px; }
+    .testimonal_item .testimonal_text .main_text {
+      color: #808369;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 33px;
+      text-align: center;
+      margin-bottom: 76px; }
+    .testimonal_item .testimonal_text .signature {
+      text-align: center;
+      color: #929292;
+      font-size: 14px;
+      font-weight: 400; }
+
+.carousel_controls .controls {
+  width: 60px;
+  height: 60px;
+  background-color: #f3f1ec;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer; }
+
+.carousel_controls .control_prev {
+  top: 160px;
+  left: -30px; }
+  .carousel_controls .control_prev i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%); }
+
+.carousel_controls .control_next {
+  top: 160px;
+  right: -30px; }
+  .carousel_controls .control_next i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%); }
+
+.blog {
+  width: 100%; }
+  .blog .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; }
+    @media screen and (max-width: 780px) {
+      .blog .container {
+        padding-left: 15px;
+        padding-right: 15px; } }
+    .blog .container .blog_items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      justify-content: center;
+      margin-bottom: 74px; }
+      .blog .container .blog_items .blog_items-item {
+        box-sizing: border-box;
+        word-wrap: break-word;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(33.33333% - 30px); }
+        @media screen and (max-width: 1920px) {
+          .blog .container .blog_items .blog_items-item {
+            width: calc(33.33333% - 30px); } }
+        @media screen and (max-width: 960px) {
+          .blog .container .blog_items .blog_items-item {
+            width: calc(75% - 30px); } }
+        @media screen and (max-width: 780px) {
+          .blog .container .blog_items .blog_items-item {
+            width: calc(75% - 30px); } }
+        .blog .container .blog_items .blog_items-item img {
+          width: 100%; }
+        .blog .container .blog_items .blog_items-item .blog_article {
+          text-align: center; }
+          .blog .container .blog_items .blog_items-item .blog_article .article_date {
+            color: #808369;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            margin-top: 35px; }
+          .blog .container .blog_items .blog_items-item .blog_article .article_header {
+            color: #434343;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 33px;
+            margin-top: 17px;
+            position: relative; }
+            .blog .container .blog_items .blog_items-item .blog_article .article_header::after {
+              content: '';
+              display: block;
+              width: 111px;
+              height: 2px;
+              background-color: #a7a99a;
+              position: absolute;
+              top: 81px;
+              left: 50%;
+              transform: translateX(-50%); }
