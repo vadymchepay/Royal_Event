@@ -1,0 +1,28 @@
+ .book_today {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    .section_holder {
+        width: 100%;
+        padding-top: 196px;
+        background-image: url(../img/book_today.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            @include wrapper();
+            .section_title {
+                background-image: url(../img/logo3.png);
+                margin-top: 0;
+                .section_title-name {
+                    color: #ffffff;
+                }
+                .section-title_heading {
+                    min-width: 632px;
+                    color: #ffffff;
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

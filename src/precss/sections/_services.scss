@@ -1,0 +1,95 @@
+.container {
+    @include wrapper();
+    padding-bottom: 135px;
+    .services_list {
+        @include row-flex;
+        justify-content: center;
+        margin-bottom: 65px;
+        .services_column {
+            @include col();
+            @include size(4);
+            @include size-lg(4);
+            @include size-md(4);
+            @include size-sm(10);
+            .service_item {
+                display: flex;
+                .service_num {
+                    padding: 0 20px;
+                    color: #eae7e0;
+                    font-size: 40px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .service_type {
+                    box-sizing: border-box;
+                    padding-top: 10px;
+                    .service_name {
+                        color: #808369;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 1.8px;
+                        margin-bottom: 55px;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 111px;
+                            height: 2px;
+                            background-color: #a7a99a;
+                            position: absolute;
+                        }
+                    }
+                    .service_description {
+                        color: #929292;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        margin-bottom: 54px;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                .service_item {
+                    .service_type {
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            text-align: right;
+                            .service_name {
+                                &::after {
+                                    top: 41px;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }       
+            &:nth-child(3) {
+                .service_item {
+                    .service_type {
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            text-align:left;
+                            .service_name {
+                                &::after {
+                                    top: 41px;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                display: flex;
+                align-items: center;
+      
+            }
+            
+            
+        }
+    }
+}
