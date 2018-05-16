@@ -1,13 +1,13 @@
-.about_us {
+.chef {
     width: 100%;
     box-sizing: border-box;
     padding: 0 50px;
-    .about_us-banner {
+    .chef-banner {
         width: 100%;
         max-height: 696px;
         position: relative;
         background-color: #232323;
-        background: url(../img/about_us_banner.jpg);
+        background: url(../img/cheaf-banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 110px;
@@ -21,7 +21,7 @@
                 color: #fff;
             }
         }
-        .about_us-story {
+        .chef-story {
             max-width: 1168px;
             display: flex;
             flex-wrap: wrap;
@@ -36,23 +36,37 @@
                 box-sizing: border-box;
                 padding: 90px 70px 0 70px;
                 background-color: #fff;
-                .story_header {
-                    max-width: 397px;
-                    color: #808369;
-                    font-size: 22px;
-                    font-weight: 700;
-                    line-height: 33px;
-                    margin-bottom: 42px;
-                }
                 .story_text {
                     color: #929292;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 24px;
-                    margin-bottom: 60px;
+                    background-image: url(../img/curlib.png);
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    background-position: top left;
+                    margin-bottom: 82px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 111px;
+                        height: 2px;
+                        background-color: #a7a99a;
+                        position: absolute;
+                        left: 0;
+                        top: 177px;
+                    }
+                }
+                .chef_sign {
+                    color: #929292;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 57px;
                     span {
-                        color: #434343;
-                        font-size: 28px;
+                        color: #808369;
+                        font-size: 20px;
                         font-weight: 700;
                     }
                 }

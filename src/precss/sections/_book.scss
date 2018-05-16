@@ -4,6 +4,7 @@
     padding: 0 50px;
     .section_holder {
         width: 100%;
+        max-height: 696px;
         padding-top: 196px;
         background-image: url(../img/book_today.jpg);
         background-repeat: no-repeat;
@@ -11,6 +12,7 @@
         .container {
             @include wrapper();
             .section_title {
+                width: 52.33%;
                 background-image: url(../img/logo3.png);
                 margin-top: 0;
                 .section_title-name {
@@ -21,6 +23,7 @@
                     color: #ffffff;
                     font-size: 50px;
                     font-weight: 700;
+                    margin: 0 auto;
                 }
             }
         }
