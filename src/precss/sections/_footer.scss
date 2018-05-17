@@ -11,10 +11,12 @@
 
 .footer_content {
     @include row-flex();
+    justify-content: center;
     margin-bottom: 69px;
     .footer_content-item {
         @include col();
         @include size(4);
+        @include size-xs(6);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,16 +94,38 @@
     left: 50%;
     transform: translateX(-50%);
     span {
-        
+
         position: relative;
         top: 12px;
     }
-    i{
+    i {
         font-size: 18px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 25px;
-        
+
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footer {
+        padding-top: 60px;
+        .footer_content {
+
+            .footer_content-item {
+                &:nth-child(2) {
+                    order: -1;
+                    @include size-xs(7);
+                    margin-bottom: 20px;
+                }
+                .contacts {
+                    text-align: right;
+                }
+                .adress {
+                    text-align: left;
+                }
+            }
+        }
     }
 }

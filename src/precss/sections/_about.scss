@@ -12,6 +12,7 @@
         background-size: cover;
         padding-top: 1px;
         .section_title {
+            background-image: url(../img/logo3.png);
             position: relative;
             z-index: 2;
             .section_title-name {
@@ -48,24 +49,24 @@
                     @include size-xl(6);
                     @include size-lg(6);
                     @include size-md(10);
-                    @include size-sm(10);
+                    @include size-sm(12);
                     box-sizing: border-box;
-                    padding: 60px;
+                    padding: 30px;
                     background-color: #fff;
                     .story_header {
                         max-width: 397px;
                         color: #808369;
                         font-size: 22px;
                         font-weight: 700;
-                        line-height: 33px;
-                        margin-bottom: 42px;
+                        line-height: 27px;
+                        margin-bottom: 30px;
                     }
                     .story_text {
                         color: #929292;
                         font-size: 14px;
                         font-weight: 400;
-                        line-height: 24px;
-                        margin-bottom: 60px;
+                        line-height: 20px;
+                        margin-bottom: 30px;
                         span {
                             color: #434343;
                             font-size: 28px;
@@ -79,6 +80,34 @@
 }
 
 @media screen and (max-width: 960px) {
+    .about_us {
+        .about_us-banner {
+            .about_us-story {
+               
+                .about_us-container {
+                    transform: translateY(40px);
+                    .about_us_img {
+                        display: none;
+                    }
+                    .story {
+                       
+                        padding: 60px;
+                        text-align: center;
+                        .story_header {
+                            margin: 0 auto;
+                         
+                        }
+
+                        .button {
+                           margin: 0 auto; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 560px) {
     .about_us {
         .about_us-banner {
             .about_us-story {

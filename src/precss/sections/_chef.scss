@@ -34,7 +34,7 @@
                     @include size-xl(6);
                     @include size-lg(6);
                     @include size-md(6);
-                    @include size-sm(8);
+                    @include size-sm(12);
                     padding: 0;
                     box-sizing: border-box;
                     img {
@@ -48,7 +48,7 @@
                     @include size-xl(6);
                     @include size-lg(6);
                     @include size-md(6);
-                    @include size-sm(10);
+                    @include size-sm(12);
                     box-sizing: border-box;
                     padding: 60px;
                     background-color: #fff;
@@ -71,7 +71,7 @@
                             background-color: #a7a99a;
                             position: absolute;
                             left: 0;
-                            top: 177px;
+                            bottom: -30px;
                         }
                     }
                     .chef_sign {

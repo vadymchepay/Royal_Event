@@ -15,7 +15,7 @@
 
 
 .testimonals_carousel {
-   @include wrapper();
+    @include wrapper();
     padding: 0 15px;
     overflow: hidden;
     .testimonals_carousel_size_keeper {
@@ -33,7 +33,22 @@
             z-index: 2;
             .carousel {
                 height: 100% !important;
+                .indicators {
+                    display: none;
+                }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .testimonals_carousel {
+
+        .testimonals_carousel_size_keeper {
+            width: 100%;
+            height: 0;
+            padding-bottom: 74%;
+
         }
     }
 }
@@ -79,6 +94,35 @@
         }
     }
 }
+
+@media screen and (max-width: 560px) {
+ .testimonal_item {
+    
+    .testimonal_text {
+        box-sizing: border-box;
+        background-color: #fff;
+        padding: 88px 40px 28px;
+        position: relative;
+        z-index: 2;
+        top: -55px;
+        .main_text {
+            color: #808369;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .signature {
+            text-align: center;
+            color: #929292;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+}
+
 
 .carousel_controls {
     .controls {

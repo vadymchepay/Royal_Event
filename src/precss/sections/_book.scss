@@ -53,4 +53,48 @@
              }
          }
      }
+ } 
+
+@media screen and (max-width: 780px) {
+     .book_today {
+        .section_holder {
+             .container {
+                
+                 .section_title {
+                  
+                     .section-title_heading {
+                         min-width: 400px;
+                         color: #ffffff;
+                         font-size: 50px;
+                         font-weight: 700;
+                         margin: 0 auto;
+                     }
+                 }
+             }
+         }
+     }
+ } 
+ @media screen and (max-width: 560px) {
+     .book_today {
+        .section_holder {
+             .container {
+                 @include wrapper();
+                 .section_title {
+                     width: 100%;
+                     background-image: url(../img/logo3.png);
+                     margin-top: 0;
+                     .section_title-name {
+                         color: #ffffff;
+                     }
+                     .section-title_heading {
+                         min-width: 300px;
+                         color: #ffffff;
+                         font-size: 40px;
+                         font-weight: 700;
+                         margin: 0 auto;
+                     }
+                 }
+             }
+         }
+     }
  }

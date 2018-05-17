@@ -45,13 +45,9 @@ nav {
     float: left;
     position: relative;
     z-index: 1;
-    height: $navbar-height-mobile;
     margin: 0 18px;
 
-    i {
-      height: $navbar-height-mobile;
 
-    }
   }
 
 
@@ -186,7 +182,7 @@ nav {
 // Fixed Navbar
 .navbar-fixed {
   position: relative;
-  height: $navbar-height-mobile;
+  
   z-index: 997;
 
   nav {
@@ -198,9 +194,9 @@ nav {
     min-height: $navbar-height;
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: $navbar-height;
+    
   }
   .navbar-fixed {
-    height: $navbar-height;
+    
   }
 }
