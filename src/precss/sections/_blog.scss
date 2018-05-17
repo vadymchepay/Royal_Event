@@ -5,13 +5,13 @@
         .blog_items {
             @include row-flex();
             justify-content: center;
-            margin-bottom: 74px;
             .blog_items-item {
                 @include col();
                 @include size(4);
                 @include size-lg(4);
                 @include size-md(9);
                 @include size-sm(9);
+                margin-bottom: 74px;
 
                 img {
                     width: 100%;
@@ -54,3 +54,4 @@
 
 
 }
+

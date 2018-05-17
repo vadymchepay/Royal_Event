@@ -12,8 +12,8 @@
 <body>
     <header class="header">
         <div class="top_header">
-            <nav class="main_nav">
-                <ul>
+            <nav class="main_nav"> <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="hide-on-med-and-down">
                     <li class="menu_item"><a href="#"><i class="fas fa-home"></i></a></li>
                     <li class="menu_item"><a href="#">About Us</a></li>
                     <li class="menu_item"><a href="#">Pages</a></li>
@@ -22,6 +22,16 @@
                     <li class="menu_item"><a href="#">Galery</a></li>
                     <li class="menu_item"><a href="#">Blog</a></li>
                     <li class="menu_item"><a href="#">Contacts</a></li>
+                </ul>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Galery</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,25 +58,25 @@
         <div class="carousel_size_keeper">
             <div class="carousel_container">
                 <div class="carousel carousel-slider">
-                    <div class="carousel-item" href="#one!"><img src="img/slider_1.jpg">
+                    <div class="carousel-item">
                         <div class="carousel-item-descr">
                             <h1>A perfect blend of 
 sensational food</h1> <a href="#" class="button">order service</a> </div>
                         <div class="arrow_down"><i class="fas fa-angle-down"></i></div>
                     </div>
-                    <div class="carousel-item" href="#two!"><img src="img/slider_1.jpg">
+                    <div class="carousel-item">
                         <div class="carousel-item-descr">
                             <h1>A perfect blend of 
 sensational food</h1> <a href="#" class="button">order service</a> </div>
                         <div class="arrow_down"><i class="fas fa-angle-down"></i></div>
                     </div>
-                    <div class="carousel-item" href="#three!"><img src="img/slider_1.jpg">
+                    <div class="carousel-item">
                         <div class="carousel-item-descr">
                             <h1>A perfect blend of 
 sensational food</h1> <a href="#" class="button">order service</a> </div>
                         <div class="arrow_down"><i class="fas fa-angle-down"></i></div>
                     </div>
-                    <div class="carousel-item" href="#four!"><img src="img/slider_1.jpg">
+                    <div class="carousel-item">
                         <div class="carousel-item-descr">
                             <h1>A perfect blend of 
 sensational food</h1> <a href="#" class="button">order service</a> </div>
@@ -99,10 +109,13 @@ Drinks</span>
         <div class="about_us-banner">
             <div class="section_title"> <span class="section_title-name">about us</span>
                 <h2 class="section-title_heading">A Short Story About Our Company</h2> </div>
-            <div class="about_us-story"> <img src="img/cheaf4.jpg" alt="about us image">
-                <div class="story">
-                    <h3 class="story_header">A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff</h3>
-                    <p class="story_text"> <span>1997</span> -Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure. dolor in hendrerit in vulputate velit. esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p> <a href="#" class="button">read full story</a> </div>
+            <div class="about_us-story">
+                <div class="about_us-container">
+                    <div class="about_us_img"> <img src="img/cheaf4.jpg" alt="about us image"></div>
+                    <div class="story">
+                        <h3 class="story_header">A Perfect Blend of Sensational Food, Inspiring Ideas and Professional Staff</h3>
+                        <p class="story_text"> <span>1997</span> -Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure. dolor in hendrerit in vulputate velit. esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p> <a href="#" class="button">read full story</a> </div>
+                </div>
             </div>
         </div>
     </section>
@@ -283,10 +296,13 @@ Drinks</span>
             <div class="section_title"> <span class="section_title-name">chef</span>
                 <h2 class="section-title_heading">Who’s Behind Great
 Service?</h2> </div>
-            <div class="chef-story"> <img src="img/cheaf_portrait.jpg" alt="chef">
-                <div class="story">
-                    <p class="story_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure. dolor in hendrerit in vulputate velit. esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p>
-                    <p class="chef_sign"><span>Andreo Moreno,</span> Master-Chef</p> <a href="#" class="button">view all team</a> </div>
+            <div class="chef-story">
+                <div class="chef-container">
+                    <div class="chef_img"> <img src="img/cheaf_portrait.jpg" alt="chef"></div>
+                    <div class="story">
+                        <p class="story_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure. dolor in hendrerit in vulputate velit. esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p>
+                        <p class="chef_sign"><span>Andreo Moreno,</span> Master-Chef</p> <a href="#" class="button">view all team</a> </div>
+                </div>
             </div>
         </div>
     </section>

@@ -16,20 +16,21 @@
 .galery_items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 57px;
     .galery_items_small {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         box-sizing: border-box;
-        padding-right: 10px;
-        max-width: 1218px; 
+        flex-grow: 1;
+        max-width: 1205px; 
         .small_item {
+            flex-grow: 1;
            margin-bottom: 20px;
             &.small{
                 max-width: 586px;
-                margin-right: 20px;
+                
             }
             &.big {
                 max-width: 594px;
@@ -38,8 +39,8 @@
         }
     }
     .galery_item_big {
-        max-width: 599px;
+        max-width: 587px;
         box-sizing: border-box;
-        padding-left: 10px;
+        flex-grow: 2;
     }
 }

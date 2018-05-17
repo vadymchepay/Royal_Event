@@ -1,5 +1,5 @@
 .header {
-    max-width: 100%;
+    width: 100%;
     padding: 0 50px;
     box-sizing: border-box;
     .top_header {
@@ -7,20 +7,32 @@
         background-color: #f3f1ec;
         .main_nav {
             @include wrapper();
-            ul {
+            background-color: inherit;
+            min-height: 56px;
+            color: #808369;
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .sidenav-trigger {
+                color: #808369;
+            }
+            .hide-on-med-and-down {
                 display: flex;
                 justify-content: center;
-                li {
-                    padding: 23px 25px;
+                align-items: center;
+                .menu_item {
+                    padding: 0 20px;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
+                    align-items: center;
                     &::after {
                         content: '';
                         display: block;
                         background-color: #d0ceca;
                         width: 1px;
                         height: 16px;
-                        transform: translateX(25px);
+                        transform: translateX(20px);
                     }
                     &:last-child {
                         &::after {
@@ -32,15 +44,12 @@
                         text-transform: uppercase;
                         font-size: 18px;
                         letter-spacing: 1.4px;
-
-
-
+                        padding: 0;
                     }
                 }
             }
         }
     }
-
     .header_contacts {
         @include wrapper();
         padding-top: 59px;
@@ -49,9 +58,6 @@
             .header-contacts-items__item {
                 @include col();
                 @include size(4);
-                @include size-lg(4);
-                @include size-md(4);
-                @include size-sm(12);
                 display: flex;
                 justify-content: center;
                 color: #808369;
@@ -70,7 +76,6 @@
                     flex-direction: column;
                     align-items: flex-end;
                 }
-
             }
         }
     }

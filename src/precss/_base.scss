@@ -1,7 +1,16 @@
 @include reset();
 body {
     font-family: 'PT_Serif';
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
+//header,
+//section,
+//footer {
+//    max-width: 1920px;
+//    margin: 0 auto;
+//}
 
 a {
     display: block;
@@ -12,13 +21,18 @@ a {
     }
 }
 
+.container {
+    @include wrapper();
+    padding-bottom: 110px;
+}
+
 .button_container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-button, 
+button,
 .button {
     width: 273px;
     height: 72px;
@@ -34,19 +48,21 @@ button,
 }
 
 .arrow_down {
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 100%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -38%);
+    transform: translate(-50%, 60%);
     z-index: 10;
+    cursor: pointer;
     i {
         position: absolute;
-        top: 23%;
-        left: 46%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

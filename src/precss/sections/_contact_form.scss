@@ -14,17 +14,18 @@
 }
 
 .contact_form_place {
-    max-width: 770px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 0 15px;
     .input_fields {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 29px;
         input {
             display: block;
             box-sizing: border-box;
-            width: 370px;
+            flex-basis: 370px;
             height: 66px;
             background-color: #ffffff;
             border: 0;
@@ -36,6 +37,7 @@
             letter-spacing: 1.4px;
             padding-left: 43px;
             line-height: 66px;
+            margin-bottom: 29px;
         }
     }
     textarea {
@@ -52,5 +54,15 @@
         text-transform: uppercase;
         letter-spacing: 1.4px;
         margin-bottom: 58px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .contact_form_place {
+        .input_fields {
+            input {
+                flex-grow: 1;
+            }
+        }
     }
 }

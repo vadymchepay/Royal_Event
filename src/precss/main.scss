@@ -7,8 +7,15 @@
 @import 'base';
 
 //Elements
-
+@import 'elements/color-variables';
+@import 'elements/color-classes';
+@import 'elements/variables';
+@import 'elements/global';
+@import 'elements/icons-material-design';
+@import 'elements/navbar';
+@import 'elements/sidenav';
 @import 'elements/carousel';
+
 
 //Sections
 

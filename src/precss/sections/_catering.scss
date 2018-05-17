@@ -4,34 +4,36 @@
         @include wrapper();
         .catering_items {
             @include row-flex();
+            justify-content: center;
             .catering_items-item {
                 @include col();
                 @include size(4);
                 @include size-lg(4);
                 @include size-md(4);
-                @include size-sm(12);
+                @include size-sm(7);
+                @include size-xs(7);
                 position: relative;
                 margin-bottom: 66px;
                 img {
-                    position: absolute;
                     width: 100%;
-                    top: 0;
-                    left: 0;
-                    z-index: 2;
-                    
+                    height: 100%;
                 }
 
                 .catering-name {
+                    display: block;
                     color: #ffffff;
                     font-family: 'Yellowtail';
                     font-size: 45px;
                     font-weight: 400;
-                    line-height: 35px;
+                    line-height: 45px;
                     display: block;
-                    position: relative;
+                    position: absolute;
                     z-index: 3;
-                    text-align: center;
-                    line-height: 473px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    
+                    
                 }
             }
         }
@@ -44,5 +46,4 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 103px;
-}
+    }
