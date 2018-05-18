@@ -26,7 +26,30 @@
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 57px;
-
+        .small_item {
+            overflow: hidden;
+            &:hover {
+                img {
+                    transform: scale(1.2, 1.2);
+                    transition: 0.5s linear;
+                }
+            }
+            img {
+                transition: 0.5s linear;
+            }
+        }        
+        .galery_item_big{
+            overflow: hidden;
+            &:hover {
+                img {
+                    transform: scale(1.2, 1.2);
+                    transition: 0.5s linear;
+                }
+            }
+            img {
+                transition: 0.5s linear;
+            }
+        }
     }
 }
 
@@ -45,7 +68,6 @@
                     width: 48.64%;
                 }
             }
-
         }
     }
 }
@@ -74,43 +96,21 @@
                     width: 100%;
                 }
             }
-
         }
     }
 }
 
-
-//.galery_items {
-//    display: flex;
-//    flex-wrap: wrap;
-//    justify-content: space-around;
-//    margin-bottom: 57px;
-//    .galery_items_small {
-//        display: flex;
-//        flex-wrap: wrap;
-//        justify-content: space-around;
-//        box-sizing: border-box;
-//        flex-grow: 1;
-//        max-width: 1205px;
-//        
-//        .small_item {
-//            
-//           margin-bottom: 20px;
-//            &.small{
-//                max-width: 586px;
-//                
-//                flex-grow: 1;
-//            }
-//            &.big {
-//                max-width: 594px;
-//                flex-grow: 1;
-//            }
-//            
-//        }
-//    }
-//    .galery_item_big {
-//        max-width: 587px;
-//        box-sizing: border-box;
-//        flex-grow: 1;
-//    }
-//}
+@media screen and (min-width: 320px) and (max-width: 559px) {
+    .galery {
+        padding: 0 5px;
+        padding-bottom: 110px;
+        .galery_holder {
+            width: 100%;
+            background-color: #fff;
+            padding-top: 0;
+            .section_title {
+                margin-bottom: 113px;
+            }
+        }
+    }
+}

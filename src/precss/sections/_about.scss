@@ -29,6 +29,14 @@
                 justify-content: center;
                 box-sizing: border-box;
                 transform: translateY(5px);
+                &:hover {
+                    .about_us_img {
+                        img {
+                            transform: scale(1.2, 1.2);
+                            transition: 0.5s linear;
+                        }
+                    }
+                }
                 .about_us_img {
                     @include col-padding();
                     @include size(6);
@@ -38,9 +46,11 @@
                     @include size-sm(10);
                     padding: 0;
                     box-sizing: border-box;
+                    overflow: hidden;
                     img {
                         width: 100%;
                         height: 100%;
+                        transition: 0.5s linear;
                     }
                 }
                 .story {
@@ -83,23 +93,19 @@
     .about_us {
         .about_us-banner {
             .about_us-story {
-               
                 .about_us-container {
                     transform: translateY(40px);
                     .about_us_img {
                         display: none;
                     }
                     .story {
-                       
                         padding: 60px;
                         text-align: center;
                         .story_header {
                             margin: 0 auto;
-                         
                         }
-
                         .button {
-                           margin: 0 auto; 
+                            margin: 0 auto;
                         }
                     }
                 }
@@ -107,27 +113,52 @@
         }
     }
 }
+
 @media screen and (max-width: 560px) {
     .about_us {
         .about_us-banner {
             .about_us-story {
-               
                 .about_us-container {
                     transform: translateY(40px);
                     .about_us_img {
                         display: none;
                     }
                     .story {
-                       
                         padding: 60px;
                         text-align: center;
                         .story_header {
                             margin: 0 auto;
-                         
                         }
-
                         .button {
-                           margin: 0 auto; 
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 559px) {
+    .about_us {
+        padding: 0 5px;
+        .about_us-banner {
+            .about_us-story {
+                .about_us-container {
+                    transform: translateY(20px);
+                    .about_us_img {
+                        display: none;
+                    }
+                    .story {
+                        padding: 30px;
+                        text-align: center;
+                        .story_header {
+                            margin: 0 auto;
+                            margin-bottom: 30px;
+                        }
+                        .button {
+                            width: 230px;
+                            margin: 0 auto;
                         }
                     }
                 }

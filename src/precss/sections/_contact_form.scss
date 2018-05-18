@@ -66,3 +66,18 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 559px) {
+    .conact_form {
+        padding: 0 5px;
+        .contact_form_holder {
+            width: 100%;
+            background-color: #f3f1ec;
+            padding-top: 1px;
+            padding-bottom: 110px;
+            .section_title {
+                margin-bottom: 110px;
+            }
+        }
+    }
+}

@@ -19,7 +19,7 @@
                 height: 100% !important;
                 .carousel-item {
                     height: 100% !important;
-                    background-image: url(../../img/slider_1.jpg);
+                    background-image: url(../img/slider_1.jpg);
                     background-repeat: no-repeat;
                     background-position: center top;
                     .carousel-item-descr {
@@ -72,9 +72,9 @@
                         z-index: 10;
                         i {
                             position: absolute;
-                            top: 50%;
+                            top: 30%;
                             left: 50%;
-                            transform: translate(-50%, -70%);
+                            transform: translate(-50%, 0);
                         }
                     }
                 }
@@ -115,9 +115,9 @@
                             z-index: 10;
                             i {
                                 position: absolute;
-                                top: 50%;
+                                top: 15%;
                                 left: 50%;
-                                transform: translate(-50%, -123%);
+                                transform: translate(-50%, 0);
                             }
                         }
                     }
@@ -171,7 +171,7 @@
                             }
                         }
                     }
-                    .indicators{
+                    .indicators {
                         bottom: 0;
                         left: 15px;
                     }
@@ -221,11 +221,10 @@
                                 position: absolute;
                                 top: 70%;
                                 left: 50%;
-                                
                             }
                         }
                     }
-                    .indicators{
+                    .indicators {
                         bottom: 0;
                         left: 15px;
                     }
@@ -235,3 +234,36 @@
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 559px) {
+    .main_carousel {
+        padding: 0 5px;
+        .carousel_size_keeper {
+            padding-bottom: 126%;
+            .carousel_container {
+                .carousel {
+                    .carousel-item {
+                        background-size: 150% 100%;
+                        height: 100% !important;
+                        .carousel-item-descr {
+                            justify-content: flex-start;
+                            h1 {
+                                font-size: 30px;
+                                line-height: 35px;
+                                margin-top: 70px;
+                                margin-bottom: 60px;
+                            }
+                        }
+                        .arrow_down {
+                            width: 45px;
+                            height: 45px;
+                            bottom: -4%;
+                            i {
+                                top: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

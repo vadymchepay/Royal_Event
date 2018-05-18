@@ -45,24 +45,36 @@ button,
     text-transform: uppercase;
     letter-spacing: 1.6px;
     line-height: 72px;
+    transition: 0.5s linear;
+    &:hover{
+        background-color: #f1685a;
+        box-shadow: 0 2px 3px #968379;
+    }
 }
 
 .arrow_down {
-    width: 85px;
-    height: 85px;
+    width: 82px;
+    height: 82px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 60%);
+    transform: translate(-50%, 62%);
     z-index: 10;
     cursor: pointer;
+    &:hover {
+        i {
+            color: #f1685a;
+            font-size: 20px;
+            line-height: 8px;
+        }
+    }
     i {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
     }
 }
 
@@ -109,6 +121,12 @@ button,
 @media screen and (max-width: 780px) {
     .section_title {
         width: 65%;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .section_title {
+        width: 100%;
     }
 }
 

@@ -12,6 +12,7 @@
         background-size: cover;
         padding-top: 1px;
         .section_title {
+            background-image: url(../img/logo3.png);
             position: relative;
             z-index: 2;
             .section_title-name {
@@ -28,6 +29,14 @@
                 justify-content: center;
                 box-sizing: border-box;
                 transform: translateY(5px);
+                &:hover{
+                    .chef_img{
+                        img{
+                            transform: scale(1.2, 1.2);
+                            transition: 0.5s linear;
+                        }
+                    }
+                }
                 .chef_img {
                     @include col-padding();
                     @include size(6);
@@ -37,9 +46,11 @@
                     @include size-sm(12);
                     padding: 0;
                     box-sizing: border-box;
+                    overflow: hidden;
                     img {
                         width: 100%;
                         height: 100%;
+                        transition: 0.5s linear;
                     }
                 }
                 .story {
@@ -124,7 +135,7 @@
                         display: none;
                     }
                     .story {
-                         padding: 60px;
+                        padding: 60px;
                         text-align: center;
                         .story_text {
                             margin-bottom: 50px;
@@ -132,8 +143,33 @@
                         .chef_sign {
                             margin-bottom: 40px;
                         }
-                         .button {
-                           margin: 0 auto; 
+                        .button {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 559px) {
+    .chef {
+        padding: 0 5px;
+        .chef-banner {
+            .section_title {
+                width: 90%;
+            }
+            .chef-story {
+                .chef-container {
+                    transform: translateY(20px);
+                    .chef_img {
+                        display: none;
+                    }
+                    .story {
+                        padding: 30px;
+                        .button {
+                            width: 230px;
                         }
                     }
                 }

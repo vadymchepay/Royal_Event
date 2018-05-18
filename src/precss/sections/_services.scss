@@ -101,3 +101,10 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 559px){
+    .container {
+        padding: 0 5px;
+        padding-bottom: 110px;
+    }
+}
