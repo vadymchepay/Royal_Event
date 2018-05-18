@@ -1,78 +1,111 @@
 .main_carousel {
     width: 100%;
+    height: 773px !important;
     box-sizing: border-box;
     padding: 0 50px;
-    .carousel_size_keeper {
+    .carousel_container {
         width: 100%;
-        height: 0;
-        padding-bottom: 773px;
-        box-sizing: border-box;
-        position: relative;
-        .carousel_container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            .carousel {
+        height: 100%;
+        .carousel {
+            height: 100% !important;
+            .carousel-item {
                 height: 100% !important;
-                .carousel-item {
-                    height: 100% !important;
-                    background-image: url(../img/slider_1.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center top;
-                    .carousel-item-descr {
+                background-image: url(../img/slider_1.jpg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                .carousel-item-descr {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h1 {
+                        max-width: 770px;
+                        color: #ffffff;
+                        font-size: 60px;
+                        font-weight: 700;
+                        line-height: 60px;
+                        text-transform: uppercase;
+                        letter-spacing: 6px;
+                        margin-bottom: 200px;
+                        position: relative;
+                        text-align: center;
+                        &::before,
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 111px;
+                            height: 2px;
+                            background-color: #fff;
+                            position: absolute;
+                        }
+                        &::before {
+                            top: -53px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        &::after {
+                            bottom: -53px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                .arrow_down {
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    z-index: 10;
+                    i {
                         position: absolute;
-                        top: 0;
-                        left: 0;
-                        z-index: 2;
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main_carousel {
+        height: 634px !important;
+        .carousel_container {
+            .carousel {
+                .carousel-item {
+                    background-image: url(../img/slider_1_960.jpg);
+                    background-size: 100%;
+                    height: 100% !important;
+                    .carousel-item-descr {
                         h1 {
-                            max-width: 770px;
-                            color: #ffffff;
-                            font-size: 60px;
-                            font-weight: 700;
-                            line-height: 60px;
-                            text-transform: uppercase;
-                            letter-spacing: 6px;
-                            margin-bottom: 200px;
+                            font-size: 40px;
+                            line-height: 40px;
+                            margin-bottom: 120px;
                             position: relative;
-                            text-align: center;
-                            &::before,
-                            &::after {
-                                content: '';
-                                display: block;
-                                width: 111px;
-                                height: 2px;
-                                background-color: #fff;
-                                position: absolute;
-                            }
                             &::before {
-                                top: -53px;
-                                left: 50%;
-                                transform: translateX(-50%);
+                                top: -30px;
                             }
                             &::after {
-                                bottom: -53px;
-                                left: 50%;
-                                transform: translateX(-50%);
+                                bottom: -30px;
                             }
                         }
                     }
                     .arrow_down {
+                        width: 80px;
+                        height: 80px;
                         bottom: 0;
                         left: 50%;
-                        transform: translate(-50%, 50%);
+                        transform: translate(-50%, -20%);
                         z-index: 10;
                         i {
                             position: absolute;
-                            top: 30%;
+                            top: 15%;
                             left: 50%;
                             transform: translate(-50%, 0);
                         }
@@ -83,98 +116,47 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 780px) {
     .main_carousel {
-        .carousel_size_keeper {
-            padding-bottom: 42.47%;
-            .carousel_container {
-                .carousel {
-                    .carousel-item {
-                        background-size: 100%;
-                        height: 100% !important;
-                        .carousel-item-descr {
-                            h1 {
-                                font-size: 40px;
-                                line-height: 40px;
-                                margin-bottom: 120px;
-                                position: relative;
-                                &::before {
-                                    top: -30px;
-                                }
-                                &::after {
-                                    bottom: -30px;
-                                }
+        height: 448px !important;
+        .carousel_container {
+            .carousel {
+                .carousel-item {
+                    background-size: 100%;
+                    height: 100% !important;
+                    .carousel-item-descr {
+                        justify-content: center;
+                        h1 {
+                            font-size: 40px;
+                            line-height: 40px;
+                            margin-bottom: 60px;
+                            position: relative;
+                            &::before {
+                                top: -20px;
+                            }
+                            &::after {
+                                bottom: -20px;
                             }
                         }
-                        .arrow_down {
-                            width: 55px;
-                            height: 55px;
-                            bottom: 0;
+                    }
+                    .arrow_down {
+                        width: 55px;
+                        height: 55px;
+                        bottom: 0px;
+                        left: 50%;
+                        transform: translate(-50%, 60%);
+                        z-index: 10;
+                        i {
+                            position: absolute;
+                            top: 50%;
                             left: 50%;
-                            transform: translate(-50%, 0%);
-                            z-index: 10;
-                            i {
-                                position: absolute;
-                                top: 15%;
-                                left: 50%;
-                                transform: translate(-50%, 0);
-                            }
+                            transform: translate(-50%, -123%);
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .main_carousel {
-        .carousel_size_keeper {
-            padding-bottom: 42.47%;
-            .carousel_container {
-                .carousel {
-                    .carousel-item {
-                        background-size: 100%;
-                        height: 100% !important;
-                        .carousel-item-descr {
-                            justify-content: flex-start;
-                            h1 {
-                                font-size: 40px;
-                                line-height: 40px;
-                                margin: 40px 0;
-                                position: relative;
-                                &::before {
-                                    top: -20px;
-                                }
-                                &::after {
-                                    bottom: -20px;
-                                }
-                            }
-                            .button {
-                                width: 250px;
-                                height: 60px;
-                                line-height: 60px;
-                            }
-                        }
-                        .arrow_down {
-                            width: 55px;
-                            height: 55px;
-                            bottom: 85px;
-                            left: 50%;
-                            transform: translate(-50%, 0%);
-                            z-index: 10;
-                            i {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -123%);
-                            }
-                        }
-                    }
-                    .indicators {
-                        bottom: 0;
-                        left: 15px;
-                    }
+                .indicators {
+                    bottom: 0;
+                    left: 15px;
                 }
             }
         }
@@ -183,51 +165,48 @@
 
 @media screen and (max-width: 560px) {
     .main_carousel {
-        .carousel_size_keeper {
-            padding-bottom: 85%;
-            .carousel_container {
-                .carousel {
-                    .carousel-item {
-                        background-size: 110% 100%;
-                        height: 100% !important;
-                        .carousel-item-descr {
-                            justify-content: flex-start;
-                            h1 {
-                                font-size: 40px;
-                                line-height: 40px;
-                                margin: 50px 0;
-                                position: relative;
-                                &::before {
-                                    top: -20px;
-                                }
-                                &::after {
-                                    bottom: -20px;
-                                }
+        .carousel_container {
+            .carousel {
+                .carousel-item {
+                    background-size: 110% 100%;
+                    height: 100% !important;
+                    .carousel-item-descr {
+                        justify-content: center;
+                        h1 {
+                            font-size: 40px;
+                            line-height: 40px;
+                            margin-bottom: 50px;
+                            position: relative;
+                            &::before {
+                                top: -20px;
                             }
-                            .button {
-                                width: 250px;
-                                height: 60px;
-                                line-height: 60px;
+                            &::after {
+                                bottom: -20px;
                             }
                         }
-                        .arrow_down {
-                            width: 40px;
-                            height: 40px;
-                            bottom: -10px;
-                            left: 50%;
-                            transform: translate(-50%, 0%);
-                            z-index: 10;
-                            i {
-                                position: absolute;
-                                top: 70%;
-                                left: 50%;
-                            }
+                        .button {
+                            width: 250px;
+                            height: 60px;
+                            line-height: 60px;
                         }
                     }
-                    .indicators {
+                    .arrow_down {
+                        width: 40px;
+                        height: 40px;
                         bottom: 0;
-                        left: 15px;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                        z-index: 10;
+                        i {
+                            position: absolute;
+                            top: 70%;
+                            left: 50%;
+                        }
                     }
+                }
+                .indicators {
+                    bottom: 0;
+                    left: 15px;
                 }
             }
         }
@@ -237,30 +216,37 @@
 @media screen and (min-width: 320px) and (max-width: 559px) {
     .main_carousel {
         padding: 0 5px;
-        .carousel_size_keeper {
-            padding-bottom: 126%;
-            .carousel_container {
-                .carousel {
-                    .carousel-item {
-                        background-size: 150% 100%;
-                        height: 100% !important;
-                        .carousel-item-descr {
-                            justify-content: flex-start;
-                            h1 {
-                                font-size: 30px;
-                                line-height: 35px;
-                                margin-top: 70px;
-                                margin-bottom: 60px;
-                            }
+        .carousel_container {
+            .carousel {
+                .carousel-item {
+                    background-image: url(../img/slider_1_320.jpg);
+                    background-size: 100%;
+                    height: 100% !important;
+                    .carousel-item-descr {
+                        justify-content: flex-start;
+                        h1 {
+                            font-size: 30px;
+                            line-height: 35px;
+                            margin-top: 70px;
+                            margin-bottom: 60px;
                         }
-                        .arrow_down {
-                            width: 45px;
-                            height: 45px;
-                            bottom: -4%;
-                            i {
-                                top: 60%;
-                            }
+                    }
+                    .arrow_down {
+                        width: 40px;
+                        height: 40px;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                        z-index: 10;
+                        i {
+                            position: absolute;
+                            top: 70%;
+                            left: 50%;
                         }
+                    }
+                    .indicators {
+                        bottom: 25px;
+                        left: 15px;
                     }
                 }
             }

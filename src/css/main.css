@@ -2894,198 +2894,191 @@ nav {
 
 .main_carousel {
   width: 100%;
+  height: 773px !important;
   box-sizing: border-box;
   padding: 0 50px; }
-  .main_carousel .carousel_size_keeper {
+  .main_carousel .carousel_container {
     width: 100%;
-    height: 0;
-    padding-bottom: 773px;
-    box-sizing: border-box;
-    position: relative; }
-    .main_carousel .carousel_size_keeper .carousel_container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      width: 100%;
-      height: 100%; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel {
-        height: 100% !important; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item {
-          height: 100% !important;
-          background-image: url(../img/slider_1.jpg);
-          background-repeat: no-repeat;
-          background-position: center top; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; }
-            .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
-              max-width: 770px;
-              color: #ffffff;
-              font-size: 60px;
-              font-weight: 700;
-              line-height: 60px;
-              text-transform: uppercase;
-              letter-spacing: 6px;
-              margin-bottom: 200px;
-              position: relative;
-              text-align: center; }
-              .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::before, .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
-                content: '';
-                display: block;
-                width: 111px;
-                height: 2px;
-                background-color: #fff;
-                position: absolute; }
-              .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
-                top: -53px;
-                left: 50%;
-                transform: translateX(-50%); }
-              .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
-                bottom: -53px;
-                left: 50%;
-                transform: translateX(-50%); }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down {
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 50%);
-            z-index: 10; }
-            .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down i {
-              position: absolute;
-              top: 30%;
+    height: 100%; }
+    .main_carousel .carousel_container .carousel {
+      height: 100% !important; }
+      .main_carousel .carousel_container .carousel .carousel-item {
+        height: 100% !important;
+        background-image: url(../img/slider_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top; }
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
+            max-width: 770px;
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 200px;
+            position: relative;
+            text-align: center; }
+            .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::before, .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
+              content: '';
+              display: block;
+              width: 111px;
+              height: 2px;
+              background-color: #fff;
+              position: absolute; }
+            .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
+              top: -53px;
               left: 50%;
-              transform: translate(-50%, 0); }
+              transform: translateX(-50%); }
+            .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
+              bottom: -53px;
+              left: 50%;
+              transform: translateX(-50%); }
+        .main_carousel .carousel_container .carousel .carousel-item .arrow_down {
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          z-index: 10; }
+          .main_carousel .carousel_container .carousel .carousel-item .arrow_down i {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 0); }
 
 @media screen and (max-width: 960px) {
-  .main_carousel .carousel_size_keeper {
-    padding-bottom: 42.47%; }
-    .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item {
+  .main_carousel {
+    height: 634px !important; }
+    .main_carousel .carousel_container .carousel .carousel-item {
+      background-image: url(../img/slider_1_960.jpg);
       background-size: 100%;
       height: 100% !important; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
+      .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 120px;
         position: relative; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
           top: -30px; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
           bottom: -30px; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down {
-        width: 55px;
-        height: 55px;
+      .main_carousel .carousel_container .carousel .carousel-item .arrow_down {
+        width: 80px;
+        height: 80px;
         bottom: 0;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, -20%);
         z-index: 10; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down i {
+        .main_carousel .carousel_container .carousel .carousel-item .arrow_down i {
           position: absolute;
           top: 15%;
           left: 50%;
           transform: translate(-50%, 0); } }
 
 @media screen and (max-width: 780px) {
-  .main_carousel .carousel_size_keeper {
-    padding-bottom: 42.47%; }
-    .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item {
+  .main_carousel {
+    height: 448px !important; }
+    .main_carousel .carousel_container .carousel .carousel-item {
       background-size: 100%;
       height: 100% !important; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr {
-        justify-content: flex-start; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
+      .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr {
+        justify-content: center; }
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
           font-size: 40px;
           line-height: 40px;
-          margin: 40px 0;
+          margin-bottom: 60px;
           position: relative; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
+          .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
             top: -20px; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
+          .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
             bottom: -20px; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr .button {
-          width: 250px;
-          height: 60px;
-          line-height: 60px; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down {
+      .main_carousel .carousel_container .carousel .carousel-item .arrow_down {
         width: 55px;
         height: 55px;
-        bottom: 85px;
+        bottom: 0px;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, 60%);
         z-index: 10; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down i {
+        .main_carousel .carousel_container .carousel .carousel-item .arrow_down i {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -123%); }
-    .main_carousel .carousel_size_keeper .carousel_container .carousel .indicators {
+    .main_carousel .carousel_container .carousel .indicators {
       bottom: 0;
       left: 15px; } }
 
 @media screen and (max-width: 560px) {
-  .main_carousel .carousel_size_keeper {
-    padding-bottom: 85%; }
-    .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item {
-      background-size: 110% 100%;
-      height: 100% !important; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr {
-        justify-content: flex-start; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
-          font-size: 40px;
-          line-height: 40px;
-          margin: 50px 0;
-          position: relative; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
-            top: -20px; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
-            bottom: -20px; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr .button {
-          width: 250px;
-          height: 60px;
-          line-height: 60px; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down {
-        width: 40px;
-        height: 40px;
-        bottom: -10px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        z-index: 10; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down i {
-          position: absolute;
-          top: 70%;
-          left: 50%; }
-    .main_carousel .carousel_size_keeper .carousel_container .carousel .indicators {
+  .main_carousel .carousel_container .carousel .carousel-item {
+    background-size: 110% 100%;
+    height: 100% !important; }
+    .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr {
+      justify-content: center; }
+      .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 50px;
+        position: relative; }
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::before {
+          top: -20px; }
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1::after {
+          bottom: -20px; }
+      .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr .button {
+        width: 250px;
+        height: 60px;
+        line-height: 60px; }
+    .main_carousel .carousel_container .carousel .carousel-item .arrow_down {
+      width: 40px;
+      height: 40px;
       bottom: 0;
-      left: 15px; } }
+      left: 50%;
+      transform: translate(-50%, 50%);
+      z-index: 10; }
+      .main_carousel .carousel_container .carousel .carousel-item .arrow_down i {
+        position: absolute;
+        top: 70%;
+        left: 50%; }
+  .main_carousel .carousel_container .carousel .indicators {
+    bottom: 0;
+    left: 15px; } }
 
 @media screen and (min-width: 320px) and (max-width: 559px) {
   .main_carousel {
     padding: 0 5px; }
-    .main_carousel .carousel_size_keeper {
-      padding-bottom: 126%; }
-      .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item {
-        background-size: 150% 100%;
-        height: 100% !important; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr {
-          justify-content: flex-start; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
-            font-size: 30px;
-            line-height: 35px;
-            margin-top: 70px;
-            margin-bottom: 60px; }
-        .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down {
-          width: 45px;
-          height: 45px;
-          bottom: -4%; }
-          .main_carousel .carousel_size_keeper .carousel_container .carousel .carousel-item .arrow_down i {
-            top: 60%; } }
+    .main_carousel .carousel_container .carousel .carousel-item {
+      background-image: url(../img/slider_1_320.jpg);
+      background-size: 100%;
+      height: 100% !important; }
+      .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr {
+        justify-content: flex-start; }
+        .main_carousel .carousel_container .carousel .carousel-item .carousel-item-descr h1 {
+          font-size: 30px;
+          line-height: 35px;
+          margin-top: 70px;
+          margin-bottom: 60px; }
+      .main_carousel .carousel_container .carousel .carousel-item .arrow_down {
+        width: 40px;
+        height: 40px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 10; }
+        .main_carousel .carousel_container .carousel .carousel-item .arrow_down i {
+          position: absolute;
+          top: 70%;
+          left: 50%; }
+      .main_carousel .carousel_container .carousel .carousel-item .indicators {
+        bottom: 25px;
+        left: 15px; } }
 
 .catering {
   width: 100%; }
@@ -3623,11 +3616,13 @@ nav {
       padding-bottom: 10px; }
 
 .testimonals_carousel {
+  height: 307px !important;
   max-width: 1170px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
   padding: 0 15px;
+  position: relative;
   overflow: hidden; }
   @media screen and (max-width: 960px) {
     .testimonals_carousel {
@@ -3641,48 +3636,49 @@ nav {
     .testimonals_carousel {
       padding-left: 15px;
       padding-right: 15px; } }
-  .testimonals_carousel .testimonals_carousel_size_keeper {
+  .testimonals_carousel .testimonals_carousel_container {
     width: 100%;
-    height: 0;
-    padding-bottom: 307px;
-    box-sizing: border-box;
-    position: relative; }
-    .testimonals_carousel .testimonals_carousel_size_keeper .testimonals_carousel_container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      overflow: hidden; }
-      .testimonals_carousel .testimonals_carousel_size_keeper .testimonals_carousel_container .carousel {
-        height: 100% !important; }
-        .testimonals_carousel .testimonals_carousel_size_keeper .testimonals_carousel_container .carousel .indicators {
-          display: none; }
+    height: 100%;
+    z-index: 2;
+    overflow: hidden; }
+    .testimonals_carousel .testimonals_carousel_container .carousel {
+      height: 100% !important; }
+      .testimonals_carousel .testimonals_carousel_container .carousel .indicators {
+        display: none; }
 
 @media screen and (min-width: 960px) and (max-width: 1199px) {
-  .testimonals_carousel .testimonals_carousel_size_keeper {
-    padding-bottom: 43%; } }
+  .testimonals_carousel {
+    height: 360px !important; }
+    .testimonals_carousel .carousel_controls .control_prev {
+      top: 185px;
+      left: -15px; }
+    .testimonals_carousel .carousel_controls .control_next {
+      top: 185px;
+      right: -15px; } }
 
 @media screen and (min-width: 780px) and (max-width: 959px) {
-  .testimonals_carousel .testimonals_carousel_size_keeper {
-    padding-bottom: 60%; } }
-
-@media screen and (min-width: 560px) and (max-width: 779px) {
-  .testimonals_carousel .testimonals_carousel_size_keeper {
-    width: 100%;
-    height: 0;
-    padding-bottom: 74%; } }
+  .testimonals_carousel {
+    height: 307px !important; }
+    .testimonals_carousel .carousel_controls .control_prev {
+      top: 141px;
+      left: -15px; }
+    .testimonals_carousel .carousel_controls .control_next {
+      top: 141px;
+      right: -15px; } }
 
 @media screen and (min-width: 320px) and (max-width: 559px) {
   .testimonals {
     padding: 0 5px; }
     .testimonals .section_holder {
       padding-bottom: 20px; }
-    .testimonals .testimonals_carousel .testimonals_carousel_size_keeper {
-      width: 100%;
-      height: 0;
-      padding-bottom: 125%; } }
+  .testimonals_carousel {
+    height: 357px !important; }
+    .testimonals_carousel .carousel_controls .control_prev {
+      top: 185px;
+      left: -15px; }
+    .testimonals_carousel .carousel_controls .control_next {
+      top: 185px;
+      right: -15px; } }
 
 .testimonal_item {
   position: relative; }
@@ -3721,7 +3717,7 @@ nav {
       font-size: 14px;
       font-weight: 400; }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 780px) {
   .testimonal_item .testimonal_text {
     box-sizing: border-box;
     background-color: #fff;
@@ -3755,7 +3751,7 @@ nav {
 
 .carousel_controls .control_prev {
   top: 160px;
-  left: -30px; }
+  left: -15px; }
   .carousel_controls .control_prev i {
     position: absolute;
     top: 50%;
@@ -3764,7 +3760,7 @@ nav {
 
 .carousel_controls .control_next {
   top: 160px;
-  right: -30px; }
+  right: -15px; }
   .carousel_controls .control_next i {
     position: absolute;
     top: 50%;

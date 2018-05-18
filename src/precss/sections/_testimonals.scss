@@ -14,28 +14,20 @@
     }
     
     .testimonals_carousel {
+        height: 307px !important;
         @include wrapper();
         padding: 0 15px;
+        position: relative;
         overflow: hidden;
-        .testimonals_carousel_size_keeper {
+        .testimonals_carousel_container {
             width: 100%;
-            height: 0;
-            padding-bottom: 307px;
-            box-sizing: border-box;
-            position: relative;
-            .testimonals_carousel_container {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 2;
-                overflow: hidden;
-                .carousel {
-                    height: 100% !important;
-                    .indicators {
-                        display: none;
-                    }
+            height: 100%;
+            z-index: 2;
+            overflow: hidden;
+            .carousel {
+                height: 100% !important;
+                .indicators {
+                    display: none;
                 }
             }
         }
@@ -43,28 +35,38 @@
     
     @media screen and (min-width: 960px) and (max-width: 1199px) {
         .testimonals_carousel {
-            .testimonals_carousel_size_keeper {
-                padding-bottom: 43%;
+            height: 360px !important;
+            .carousel_controls {
+                .control_prev {
+                    top: 185px;
+                    left: -15px;
+                }
+                .control_next {
+                    top: 185px;
+                    right: -15px;
+                }
             }
         }
     }
     
     @media screen and (min-width: 780px) and (max-width: 959px) {
         .testimonals_carousel {
-            .testimonals_carousel_size_keeper {
-                padding-bottom: 60%;
+            height: 307px !important;
+            .carousel_controls {
+                .control_prev {
+                    top: 141px;
+                    left: -15px;
+                }
+                .control_next {
+                    top: 141px;
+                    right: -15px;
+                }
             }
         }
     }
     
     @media screen and (min-width: 560px) and (max-width: 779px) {
-        .testimonals_carousel {
-            .testimonals_carousel_size_keeper {
-                width: 100%;
-                height: 0;
-                padding-bottom: 74%;
-            }
-        }
+        .testimonals_carousel {}
     }
     
     @media screen and (min-width: 320px) and (max-width: 559px) {
@@ -73,11 +75,17 @@
             .section_holder {
                 padding-bottom: 20px;
             }
-            .testimonals_carousel {
-                .testimonals_carousel_size_keeper {
-                    width: 100%;
-                    height: 0;
-                    padding-bottom: 125%;
+        }
+        .testimonals_carousel {
+            height: 357px !important;
+            .carousel_controls {
+                .control_prev {
+                    top: 185px;
+                    left: -15px;
+                }
+                .control_next {
+                    top: 185px;
+                    right: -15px;
                 }
             }
         }
@@ -125,7 +133,7 @@
         }
     }
     
-    @media screen and (max-width: 560px) {
+    @media screen and (max-width: 780px) {
         .testimonal_item {
             .testimonal_text {
                 box-sizing: border-box;
@@ -162,14 +170,14 @@
             cursor: pointer;
             transition: 0.2s linear;
             &:hover {
-                i{
+                i {
                     color: #f1685a;
                 }
             }
         }
         .control_prev {
             top: 160px;
-            left: -30px;
+            left: -15px;
             i {
                 position: absolute;
                 top: 50%;
@@ -179,7 +187,7 @@
         }
         .control_next {
             top: 160px;
-            right: -30px;
+            right: -15px;
             i {
                 position: absolute;
                 top: 50%;
